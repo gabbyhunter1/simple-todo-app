@@ -1,8 +1,8 @@
 import React from 'react';
-import AddTaskForm from './components/AddTaskForm.tsx';
-import TasksStats from './components/TasksStats.tsx';
-import TasksList from './components/tasks-list/TasksList.tsx';
-import BottomText from './components/BottomText.tsx';
+import AddTaskForm from '../components/add-task-form/AddTaskForm.tsx';
+import TasksStats from '../components/TasksStats.tsx';
+import TasksList from '../components/tasks-list/TasksList.tsx';
+import BottomText from '../components/BottomText.tsx';
 
 export interface Task {
   id: string;

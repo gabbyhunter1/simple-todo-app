@@ -1,6 +1,6 @@
 import { Plus } from 'lucide-react';
 import React, { useCallback, useState } from 'react';
-import { useTasks } from '../hooks/useTasks.ts';
+import { useTasks } from '../../hooks/useTasks.ts';
 
 const AddTaskForm = () => {
   const [inputValue, setInputValue] = useState('');

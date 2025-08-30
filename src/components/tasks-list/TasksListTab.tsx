@@ -1,4 +1,4 @@
-import type { Task } from '../../App.tsx';
+import type { Task } from '../../app/App.tsx';
 import { Check, X } from 'lucide-react';
 import { useTasks } from '../../hooks/useTasks.ts';
 
