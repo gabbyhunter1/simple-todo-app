@@ -9,6 +9,7 @@ export type TasksContextType = {
   deleteTask: (id: string) => void;
   toggleTask: (id: string) => void;
   clearCompleted: () => void;
+  clearAll: () => void;
 };
 
 export const TasksContext = createContext<TasksContextType | undefined>(undefined);

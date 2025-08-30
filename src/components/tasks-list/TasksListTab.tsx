@@ -10,12 +10,7 @@ const TasksListTab = ({ tasks }: TasksListTabProps) => {
   const { toggleTask, deleteTask } = useTasks();
 
   if (tasks.length === 0) {
-    return;
-  }
-
-  switch (tasks.length) {
-    case 0:
-      return;
+    return <p className="text-center py-8 text-gray-500">Пустовато...</p>;
   }
 
   return tasks.map(task => (

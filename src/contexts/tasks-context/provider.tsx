@@ -41,8 +41,12 @@ export const TasksProvider = ({ children }: TasksProviderProps) => {
     setTasks(prev => prev.filter(task => !task.completed));
   };
 
+  const clearAll = () => {
+    setTasks([]);
+  };
+
   return (
-    <TasksContext.Provider value={{ tasks, activeTasks, completedTasks, addTask, deleteTask, toggleTask, clearCompleted }}>
+    <TasksContext.Provider value={{ tasks, activeTasks, completedTasks, addTask, deleteTask, toggleTask, clearCompleted, clearAll }}>
       {children}
     </TasksContext.Provider>
   );

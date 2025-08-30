@@ -6,7 +6,7 @@ import TasksListTab from './TasksListTab.tsx';
 
 const TasksList = () => {
   const [filter, setFilter] = useState<FilterType>('all');
-  const { tasks, activeTasks, completedTasks, clearCompleted } = useTasks();
+  const { tasks, activeTasks, completedTasks, clearCompleted, clearAll } = useTasks();
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
   const counts: Record<FilterType, number> = {
@@ -55,7 +55,11 @@ const TasksList = () => {
           </button>
         ))}
 
-        <button className="cursor-pointer disabled:cursor-not-allowed" disabled={tasks.length === 0} aria-label="Очистить весь список">
+        <button
+          className="cursor-pointer disabled:cursor-not-allowed"
+          disabled={tasks.length === 0}
+          onClick={clearAll}
+          aria-label="Очистить весь список">
           <Trash className="text-red-500" />
         </button>
       </div>
@@ -63,7 +67,7 @@ const TasksList = () => {
       <h3 className="sr-only">Список задач</h3>
       {filtersList.map(f => (
         <div key={f} id={`${f}-tasks`} className="space-y-2" role="tabpanel" aria-labelledby={`${f}-tab`} hidden={filter !== f}>
-          <TasksListTab filter={f} tasks={f === 'all' ? tasks : f === 'active' ? activeTasks : completedTasks} />
+          <TasksListTab tasks={f === 'all' ? tasks : f === 'active' ? activeTasks : completedTasks} />
         </div>
       ))}
 
