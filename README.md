@@ -4,11 +4,11 @@
 Лёгкое и аккуратное To-Do приложение на React + TypeScript + Vite с базовым набором фич: добавление задач, переключение выполненности, фильтры, счётчик оставшихся и очистка выполненных. ￼
 
 [Демо](simple-todo-app-six-alpha.vercel.app)
-
+q
 
 ## Screenshots
 
-![App Screenshot](https://previews.dropbox.com/p/thumb/ACvohkOWf2KrUleYup8dqAZka3wlRY4Swdeo3ZdOZGrwduzTUiwtks-cwcQRj-5lGivtI29WKO_0MRUXM8kDq2tzuV3TyXHEu-UPfwUJEt5CNjym0qeTcV0C7yBkfqLvWeT_rVCOr3zNCvKfwteipS5lGiVGf6wsoPOIP0jOG3xkTlYKt7CscLRIGFyvi1xP9VdFkQ8HU--JUeEIVlZmrHvKMmDybxPlE1RO7HRjZtfBHKBIprBEv1cS9LX9A7BP1j6fbCpxP2qB9J-8bzJXQVVnOw-jNCfA40BH6RlHavOe-Huc3gWaLx9-bzDdHo6XhgRjvTvRH5j2A6rcISmIaMJw/p.png?is_prewarmed=true)
+![App Screenshot](https://uce1e008251adb7e9033fdbbe82d.dl.dropboxusercontent.com/cd/0/inline/CwdVQWvtgwjPhon_IocACQ8fJamgPdSS5945KxhEKP6FO6EwL55oAJL90jjGJbxhYaDNeez9Tcy_YE5yBOl26zlmJ-mgoP1JgqScdRxklKqJBMaU3BqfQp0ft597iv_NLDw93Z0aI4_NGYxQlPn_Q6Dm/file#)
 
 
 ## Features
